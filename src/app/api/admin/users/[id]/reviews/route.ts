@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
-import Recipe from "@/models/Recipe";
+import Recipe, { IReview } from "@/models/Recipe";
 import User from "@/models/User";
 import { verifyToken } from "@/lib/auth";
 
@@ -35,8 +35,8 @@ export async function GET(
 
     const userReviews = recipes.flatMap((recipe) =>
       recipe.reviews
-        .filter((r) => r.user.toString() === id)
-        .map((r) => ({
+        .filter((r: IReview) => r.user.toString() === id)
+        .map((r: IReview) => ({
           recipeId: recipe._id,
           recipeTitle: recipe.title,
           rating: r.rating,
