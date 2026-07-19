@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import Recipe from "@/models/Recipe";
+import User from "@/models/User"; // 👈 REQUIRED: registers "User" schema for .populate("createdBy")
 import { verifyToken } from "@/lib/auth";
 
 // GET: list recipes with search, filter, sort, pagination
