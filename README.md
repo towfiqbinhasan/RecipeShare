@@ -143,8 +143,8 @@ npm run start
 
 ## 🌐 Live Deployment
 
-- **Live Website:** _[add your Vercel URL here after deployment]_
-- **GitHub Repository:** _[add your GitHub repo URL here]_
+- **Live Website:** [https://recipe-share-theta.vercel.app](https://recipe-share-theta.vercel.app)
+- **GitHub Repository:** [https://github.com/towfiqbinhasan/RecipeShare](https://github.com/towfiqbinhasan/RecipeShare)
 
 ### Deploying to Vercel
 1. Push this repository to GitHub.
